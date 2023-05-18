@@ -1,0 +1,16 @@
+#primary-btn {
+  background-color: teal;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+
+  &.bg-green {
+    background-color: green;
+    color: blue;
+  }
+  &.bg-blue {
+    background-color: blue;
+    color: green;
+  }
+}
