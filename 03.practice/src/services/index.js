@@ -9,26 +9,27 @@ export async function getAllData() {
     return response.data;
   } catch (error) {
     // console.log(err);
-    throw new error();
+    throw error;
   }
 }
 
+// get data by id
 export async function getDataById(id) {
   try {
     let response = await axios(`${BASE_URL}/${id}`);
     return response.data;
   } catch (error) {
     // console.log(err);
-    throw new error();
+    throw error;
   }
 }
 
-//delete by id
+//delete data by id
 export async function deleteById(id) {
   try {
     await axios.delete(`${BASE_URL}/${id}`);
   } catch (error) {
     // console.log(err);
-    throw new error();
+    throw error;
   }
 }
