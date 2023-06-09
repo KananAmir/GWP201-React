@@ -10,17 +10,17 @@ const Card = ({ data }) => {
     return () => {
       console.log("unmounting");
     };
-  }, []);
+  }, [count]);
+
+  console.log("test");
 
   return (
     <div className="card">
-      {console.log("test")}
       <ul>
         {data.map((item) => (
           <li key={uid(12)}>{item} </li>
         ))}
       </ul>
-
       <h1>Count {count}</h1>
       <button onClick={() => setCount((count) => count + 1)}>Increment</button>
     </div>
